@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Travel Destinations"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textSize="24sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/nestedLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/title">
+
+        <ImageView
+            android:id="@+id/bali"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bali"/>
+
+        <TextView
+            android:id="@+id/baliText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/bali"
+            android:text="Bali"
+            android:onClick="makeToastBali"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nestedLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@id/nestedLayout1">
+
+        <ImageView
+            android:id="@+id/newyork"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/newyork"/>
+
+        <TextView
+            android:id="@+id/nyText"
+            android:onClick="makeToastNY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/newyork"
+            android:text="New York"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Places"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nestedLayout2"
+        android:onClick="makeToastBTN"/>
+
+
+</RelativeLayout>
