@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/img1"
-        android:layout_width="match_parent"
-        android:src="@drawable/in_n_out"
-        android:layout_height="wrap_content"/>
+        android:layout_width="100dp"
+        android:src="@drawable/in_n_out1"
+        android:layout_height="100dp"/>
     <CheckBox
         android:id="@+id/cb1"
         android:layout_toRightOf="@id/img1"
@@ -21,8 +21,9 @@
     <ImageView
         android:id="@+id/img2"
         android:layout_below="@id/img1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:src="@drawable/in_n_out2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
     <CheckBox
         android:id="@+id/cb2"
         android:layout_toRightOf="@id/img2"
