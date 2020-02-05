@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllRecipes">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Available Recipes!"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/wellington"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/beefIMG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/beefwellington"/>
+        <TextView
+            android:layout_toRightOf="@id/beefIMG"
+            android:text="Beef Wellington"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lasagna"
+        android:layout_below="@id/wellington"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/lasagnaIMG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lasagna"/>
+        <TextView
+            android:layout_toRightOf="@id/lasagnaIMG"
+            android:text="Lasagna"
+            android:textSize="30sp"
+            android:paddingLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pizza"
+        android:layout_below="@id/lasagna"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/pizzaIMG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pizza"/>
+        <TextView
+            android:layout_toRightOf="@id/pizzaIMG"
+            android:text="Pizza"
+            android:textSize="30sp"
+            android:paddingLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
