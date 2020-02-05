@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desc">Start by boiling water</string>
+    <integer name="p">123</integer>
+
+</resources>

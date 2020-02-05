@@ -25,6 +25,7 @@
         android:src="@drawable/recipesintro"/>
 
     <Button
+        android:id="@+id/goBtn"
         android:layout_below="@id/cover"
         android:text="Go!"
         android:layout_margin="10dp"
