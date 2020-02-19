@@ -1,5 +1,7 @@
 package com.example.carrental;
 
+import androidx.annotation.NonNull;
+
 public class Car {
 
     private String name;
@@ -44,5 +46,11 @@ public class Car {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.name;
     }
 }

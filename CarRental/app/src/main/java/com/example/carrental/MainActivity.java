@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         lView=findViewById(R.id.lView);
 
+        CarData.getData();
+
         arrayAdapter = new ArrayAdapter<Car>(this, R.layout.show_cars, R.id.carsTView, CarData.cars);
 
         lView.setAdapter(arrayAdapter);

@@ -10,6 +10,7 @@
         android:id="@+id/titleView"
         android:text="Rent a Car!"
         android:textSize="30sp"
+        android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

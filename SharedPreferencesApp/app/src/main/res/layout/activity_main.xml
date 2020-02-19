@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:hint="JSmith10"
+        android:layout_below="@id/profileImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:hint="*********"
+        android:layout_below="@id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/createAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:linksClickable="true"
+        android:text="Create Account"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
