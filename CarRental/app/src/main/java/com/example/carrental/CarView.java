@@ -38,7 +38,7 @@ public class CarView extends AppCompatActivity {
         title.setText(currentCar.getName());
         cover.setImageResource(currentCar.getImg());
         String carPrice = Integer.toString(currentCar.getDailyPrice());
-        price.setText(carPrice);
+        price.setText(carPrice+" Euros");
         description.setText(currentCar.getDescription());
 
 
