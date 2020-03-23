@@ -26,8 +26,8 @@ DatabaseManager databaseManager;
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-Intent intent=new Intent(MainActivity.this,ShowDataActivity.class);
-startActivity(intent);
+            Intent intent=new Intent(MainActivity.this,ShowDataActivity.class);
+            startActivity(intent);
             }
         });
     }
