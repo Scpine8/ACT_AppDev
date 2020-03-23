@@ -16,10 +16,11 @@ public class DBManager extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE USER ("
+        db.execSQL("CREATE TABLE BUDGET ("
                 + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + "NAME TEXT, "
-                + "EMAIL TEXT);");
+                + "BALANCE INTEGER,"
+                + "MAX INTEGER);");
 
 
     }
@@ -34,16 +35,17 @@ public class DBManager extends SQLiteOpenHelper{
     }
 
 
-    public void insertdata(){
+    public void insertBudget(String name, int max ){
 
         SQLiteDatabase db=open();
-        ContentValues uservalues=new ContentValues();
-        uservalues.put("NAME","iosif");
-        uservalues.put("EMAIL","iosif");
-        db.insert("USER",null,uservalues);
-        uservalues.put("NAME","iosif2");
-        uservalues.put("EMAIL","@iosif2");
-        db.insert("USER",null,uservalues);
+
+        ContentValues budgetValues = new ContentValues();
+
+        budgetValues.put("NAME", name);
+        budgetValues.put("BALANCE", 0);
+        budgetValues.put("MAX", max);
+
+        db.insert("BUDGET",null,budgetValues);
     }
 
     public Cursor showdata(){
