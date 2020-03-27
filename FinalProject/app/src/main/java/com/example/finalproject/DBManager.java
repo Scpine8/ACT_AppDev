@@ -35,22 +35,27 @@ public class DBManager extends SQLiteOpenHelper{
     }
 
 
-    public void insertBudget(String name, int max ){
+    public void insertBudget(Budget budget){
 
         SQLiteDatabase db=open();
 
         ContentValues budgetValues = new ContentValues();
 
-        budgetValues.put("NAME", name);
-        budgetValues.put("BALANCE", 0);
-        budgetValues.put("MAX", max);
+        budgetValues.put("NAME", budget.getName());
+        budgetValues.put("BALANCE", budget.getBalance());
+        budgetValues.put("MAX", budget.getMax());
 
         db.insert("BUDGET",null,budgetValues);
     }
 
+    public void eraseDB() {
+        SQLiteDatabase db=open();
+        db.delete("BUDGET", null, null);
+    }
+
     public Cursor showdata(){
         SQLiteDatabase db=open();
-        Cursor cursor=   db.query("USER",new String[]{"_id","NAME","EMAIL"},null,null,null,null,null);
+        Cursor cursor=   db.query("BUDGET",new String[]{"_id","NAME","BALANCE"},null,null,null,null,null);
         return cursor;
 
     /*cursor.moveToFirst();

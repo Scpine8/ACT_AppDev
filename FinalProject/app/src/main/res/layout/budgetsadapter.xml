@@ -16,6 +16,7 @@
         <TextView
             android:id="@+id/bBalance"
             android:layout_toRightOf="@id/bName"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MainActivity.this, Budgets.class);
+                intent = new Intent(MainActivity.this, BudgetsList.class);
                 startActivity(intent);
             }
         });
