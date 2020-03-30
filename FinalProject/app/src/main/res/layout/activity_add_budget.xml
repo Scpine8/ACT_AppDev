@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewBudget">
+    tools:context=".AddBudget">
 
     <TextView
         android:id="@+id/title"
-        android:text="Name of Budget"
+        android:text="Add Budget"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -49,7 +49,6 @@
         <EditText
             android:id="@+id/insertMax"
             android:layout_toRightOf="@id/maxLabel"
-            android:inputType="number"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"/>
     </RelativeLayout>
@@ -57,61 +56,25 @@
         android:id="@+id/row3"
         android:layout_below="@id/row2"
         android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
-
-        <TextView
-            android:id="@+id/balanceLabel"
-            android:text="Balance: "
-            android:textSize="20sp"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"/>
-        <TextView
-            android:id="@+id/viewBalance"
-            android:layout_toRightOf="@id/balanceLabel"
-            android:textSize="20sp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/row4"
-        android:layout_below="@id/row3"
-        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/updateBtn"
-            android:text="Update"
+            android:id="@+id/addBtn"
+            android:text="Add"
+            android:background="@color/colorPrimary"
+            android:inputType="number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:id="@+id/backBtn"
-            android:text="Back"
-            android:layout_toRightOf="@id/updateBtn"
+            android:id="@+id/cancelBtn"
+            android:text="Cancel"
+            android:layout_toRightOf="@id/addBtn"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
-    <Button
-        android:id="@+id/addTransaction"
-        android:layout_below="@id/row4"
-        android:text="Add Transaction"
-        android:background="@color/colorPrimary"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/deleteBtn"
-        android:layout_below="@id/addTransaction"
-        android:text="Delete"
-        android:background="@color/colorAccent"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
 
 </RelativeLayout>

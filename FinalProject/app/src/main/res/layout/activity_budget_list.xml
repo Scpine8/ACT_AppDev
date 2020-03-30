@@ -18,6 +18,27 @@
         android:layout_below="@id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_below="@id/bList"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addBudgetBtn"
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/eraseDBBtn"
+            android:text="Erase DB"
+            android:layout_toRightOf="@id/addBudgetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
 
 
 

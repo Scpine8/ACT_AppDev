@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewBudget"></activity>
+        <activity android:name=".AddTransaction"></activity>
+        <activity android:name=".AddBudget" />
+        <activity android:name=".LightSensor" />
+        <activity android:name=".ViewBudget" />
         <activity android:name=".BudgetsList" />
         <activity android:name=".MainActivity">
             <intent-filter>

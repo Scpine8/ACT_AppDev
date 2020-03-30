@@ -17,24 +17,24 @@ public class Budget {
         return __name;
     }
 
-    public void setName(String __name) {
-        this.__name = __name;
+    public void setName(String name) {
+        this.__name = name;
     }
 
     public int getBalance() {
         return __balance;
     }
 
-    public void setBalance(int __balance) {
-        this.__balance = __balance;
+    public void setBalance(int balance) {
+        this.__balance = balance;
     }
 
     public int getMax() {
         return __max;
     }
 
-    public void setMax(int __max) {
-        this.__max = __max;
+    public void setMax(int max) {
+        this.__max = max;
     }
 
     @NonNull
